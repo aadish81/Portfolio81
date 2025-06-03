@@ -33,13 +33,13 @@ function Contact() {
                     </h2>
                     <div className="flex space-x-9 md:space-x-20 justify-center">
                         <a href="https://www.linkedin.com/in/aadish-joshi" className="hover:scale-110 hover:translate-y-2 transition-transform ease-in">
-                            <img src="/Portfolio81/linkdin.png " alt="Linkdin" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]" />
+                            <img src="/linkdin.png " alt="Linkdin" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]" />
                         </a>
                         <a href="https://github.com/aadish81/" className="hover:scale-110 hover:translate-y-2 transition-transform ease-in">
-                            <img src="/Portfolio81/github.png" alt="Github" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]" />
+                            <img src="/github.png" alt="Github" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]" />
                         </a>
                         <a href="https://medium.com/@adishjoshi1111" className="hover:scale-110 hover:translate-y-2 transition-transform ease-in">
-                            <img src="/Portfolio81/medium.png" alt="Medium" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]"/>
+                            <img src="/medium.png" alt="Medium" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]"/>
                         </a>
                     </div>
 
