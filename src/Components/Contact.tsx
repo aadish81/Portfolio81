@@ -16,7 +16,7 @@ function Contact() {
        
         
         emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, event.currentTarget, import.meta.env.VITE_PUBLIC_KEY)
-        .then((result)=>{
+        .then(()=>{
             alert("Message Sent!");
             setformData({name:"",email:"",message:""})
         }).catch(()=>alert("Oop! something went wrong. Please try again."))
