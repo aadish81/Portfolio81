@@ -16,7 +16,7 @@ function Contact() {
        
         
         emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, event.currentTarget, import.meta.env.VITE_PUBLIC_KEY)
-        .then((result)=>{
+        .then(()=>{
             alert("Message Sent!");
             setformData({name:"",email:"",message:""})
         }).catch(()=>alert("Oop! something went wrong. Please try again."))
@@ -25,11 +25,30 @@ function Contact() {
     }
 
   return (
-    <section id="Contact" className='flex justify-center items-center py-20 min-h-screen mt-20 '>
+    <section id="Contact" className='flex justify-center items-center py-20 min-h-screen mt-10 '>
         <RevealOnScroll>
+            <div className="mb-10 ">
+                    <h2 className="text-3xl md:text-4xl mb-8 font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent text-center">
+                        Connect
+                    </h2>
+                    <div className="flex space-x-5 justify-center">
+                        <p>
+                            <img src="../../public/linkdin.png" alt="Linkdin" />
+                        </p>
+                        <p>
+                            <img src="/github.png" alt="Github" />
+                        </p>
+                        <p>
+                            <img src="/medium.png" alt="Medium" />
+                        </p>
+                    </div>
+
+                    
+
+            </div>
             <div className="px-4 w-96 md:w-160">
                 <h2 className="text-3xl md:text-4xl mb-8 font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent text-center">
-                    Get In Touch
+                    Get In Touh
                 </h2>
                 <form className="space-y-6" onSubmit={handelSubmit}>
                     <div className="relative">
@@ -54,6 +73,7 @@ function Contact() {
                         Submit
                     </button>
                 </form>
+
             </div>
         </RevealOnScroll>
     </section>

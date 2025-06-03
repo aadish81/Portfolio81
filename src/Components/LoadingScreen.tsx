@@ -30,7 +30,7 @@ const LoadingScreen:React.FC<loaded> = ({isLoaded}) => {
   return (
     <div className='fixed inset-0  flex flex-col  justify-center items-center z-50 bg-black text-white'>
         
-                <div className='mb-4 text-5xl md:text-7xl  font-mono font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent'>
+                <div className='mb-4 text-3xl md:text-7xl  font-mono font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent'>
                     {text}<span className='ml-0.2 blink font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent'>|</span>
                 </div>
                 <div className='h-[3px] w-[200px] md:w-[400px] rounded-full bg-gray-600 overflow-hidden'>

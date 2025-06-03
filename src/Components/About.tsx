@@ -4,6 +4,7 @@ const Frontend = [
     "HTML",
     "Javascript",
     "React Js",
+    "Redux Toolkit",
     "CSS",
     "Tailwind CSS"
 ]
@@ -11,7 +12,7 @@ const Backend = [
     "Django MVT",
     "Django Rest Framework",
     "MY SQL",
-    "Asp.Net MVCL",
+    "Asp.Net MVC",
 ]
 const CyberSpace = [
     "OWASP-10",
@@ -34,7 +35,7 @@ function About() {
                     <p className='text-gray-400 text-center text-lg w-auto m-6'>
                     I'm a passionate full-stack developer focused on building engaging web experiences using React and Django. 
                     With a strong foundation in both frontend design and backend systems, I love creating projects that solve real problems.
-                    I'm also exploring cybersecurity and and bug hunting workd, with growing experience and Python scripting.
+                    I'm also exploring cybersecurity and bug hunting world, with growing experience in Python scripting.
                     Constantly learning, I aim to build scalable, secure, and user-centered digital products. 
                     </p>
                     <div id = "Skills" className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -102,8 +103,9 @@ function About() {
                                 Work Experience
                         </h1>
                         <ul className="text-gray-400">
-                            <li><strong>BBPs and VDPs</strong> - Indulged in discovering bugs in web applications through Crowdsourcing Platforms</li>
-                            <li><strong>Hands-On</strong> - Developed beginner level app using Django, React js, Tailwind CSS, and Asp.Net MVC</li>
+                            <li><strong>Hands-On</strong> - Developed small-scale apps using Django|MVT and Rest Framework, React Js, Tailwind CSS, and Asp.Net MVC</li>
+                            <li><strong>BBPs and VDPs</strong> - Indulged in discovering bugs in web applications.</li>
+
                         </ul>
                 </div>
             </div>   
