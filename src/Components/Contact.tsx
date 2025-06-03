@@ -27,20 +27,20 @@ function Contact() {
   return (
     <section id="Contact" className='flex justify-center items-center py-20 min-h-screen mt-10 '>
         <RevealOnScroll>
-            <div className="mb-10 ">
-                    <h2 className="text-3xl md:text-4xl mb-8 font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent text-center">
+            <div className="mb-40 md:w-160 ">
+                    <h2 className="text-2xl md:text-4xl mb-12 font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent text-center">
                         Connect
                     </h2>
-                    <div className="flex space-x-5 justify-center">
-                        <p>
-                            <img src="../../public/linkdin.png" alt="Linkdin" />
-                        </p>
-                        <p>
-                            <img src="/github.png" alt="Github" />
-                        </p>
-                        <p>
-                            <img src="/medium.png" alt="Medium" />
-                        </p>
+                    <div className="flex space-x-9 md:space-x-20 justify-center">
+                        <a href="https://www.linkedin.com/in/aadish-joshi" className="hover:scale-110 hover:translate-y-2 transition-transform ease-in">
+                            <img src="/Portfolio81/linkdin.png " alt="Linkdin" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]" />
+                        </a>
+                        <a href="https://github.com/aadish81/" className="hover:scale-110 hover:translate-y-2 transition-transform ease-in">
+                            <img src="/Portfolio81/github.png" alt="Github" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]" />
+                        </a>
+                        <a href="https://medium.com/@adishjoshi1111" className="hover:scale-110 hover:translate-y-2 transition-transform ease-in">
+                            <img src="/Portfolio81/medium.png" alt="Medium" className="w-[60px] h-[60px] md:w-[70px] md:h-[70px]"/>
+                        </a>
                     </div>
 
                     
@@ -48,7 +48,7 @@ function Contact() {
             </div>
             <div className="px-4 w-96 md:w-160">
                 <h2 className="text-3xl md:text-4xl mb-8 font-bold bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent text-center">
-                    Get In Touh
+                    Get In Touch
                 </h2>
                 <form className="space-y-6" onSubmit={handelSubmit}>
                     <div className="relative">

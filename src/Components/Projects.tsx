@@ -12,6 +12,30 @@ function Projects() {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 <div className='p-6  rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.8)] transition-all'>
                     <h3 className='text-xl font-bold mb-5'>
+                        E-Commerce Web App
+                    </h3>
+                    <p className='mb-4 text-gray-500'>
+                        Simple responsive E-Commerce web application simulates a typical e-commerce application. 
+                        It uses APIs provided by <a href="https://fakestoreapi.com" className="font-bold text-gray-300">fakeproductapi.com</a>.
+
+
+
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                        {["React Js","Typescript","Redux Toolkit","Tailwind CSS"].map((value,key)=>(
+                            <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 mx-1 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2) transition-all]'>
+                                {value}
+                            </span>
+                        )
+
+                        )}                 
+                    </div>
+                    <div className='mt-6'>
+                        <a href="https://e-commerce81.vercel.app/" className='text-blue-400 hover:text-blue-300 transition-colors'>View Project--</a>
+                    </div>
+                </div>
+                <div className='p-6  rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.8)] transition-all'>
+                    <h3 className='text-xl font-bold mb-5'>
                         Django Polling Webapp 
                     </h3>
                     <p className='mb-4 text-gray-500'>
@@ -69,7 +93,7 @@ function Projects() {
 
                         )}                 
                     </div>
-                    <div className='mt-6'>
+                    <div className='mt-12 '>
                         <a href="/" className='text-blue-400 hover:text-blue-300 transition-colors'>View Project--</a>
                     </div>
                 </div>
