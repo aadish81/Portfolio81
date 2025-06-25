@@ -3,33 +3,47 @@ import {useState,useEffect} from 'react'
 
 const aboutMe = ["Seeker...","Web Developer...","Bug Hunter..."];
 let i = 0
-let j = 0   
+let j = 1  
+let k = 0
+let duration = 0
 
 function Home() {
     const [text, setText] = useState<string>("")
     
     useEffect(() => {
         const interval = setInterval(() => {
-            setText(aboutMe[i%3].substring(0,j))
-            j++
-            if(j>aboutMe[i%3].length){
-                j = 0
-                i++
+            if(j<aboutMe[i%3].length){
+                duration = 400
+                setText(aboutMe[i%3].substring(0,j))
+                j++
+                k = j
+
             }
-        },300)
+            else{
+                duration = 200
+                setText(aboutMe[i%3].substring(0,k--))
+                if(k<0){
+                    j = 1
+                    i++
+            }
+            }
+
+        },duration)
 
         return () => {
             clearInterval(interval)
         }
-    },)
+    })
 
   return (
     <section id="Home" className= "flex flex-col justify-center items-center w-full min-h-screen">
         <RevealOnScroll>
         <div className='text-center px-4'>
-            <h1 className='font-bold  text-center text-3xl md:text-7xl mb-6 bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent '>
-                 I'm a {text}
-            </h1>
+            <div className= " sm:relative sm:w-[49rem]  w-[330px] sm:h-20">
+                <h1 className=' sm:absolute top-0  font-bold  text-center text-3xl md:text-7xl mb-6 bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent '>
+                    I'm a {text}<span className = "text-3xl md:text-7xl bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent  blink">|</span>
+                </h1>
+            </div>
             <p className=' text-lg text-gray-400 mb-8 max-w-lg text-center mx-auto'>
             Fueled by a deep curiosity for technology, I dive into code with purpose and creativity.
             From crafting clean UIs with React to building solid backends with Django, I love bringing ideas to life.
