@@ -39,9 +39,9 @@ function Home() {
     <section id="Home" className= "flex flex-col justify-center items-center w-full min-h-screen">
         <RevealOnScroll>
         <div className='text-center px-4'>
-            <div className= "sm:h-20 bg-white ">
-                <h1 className='  font-bold  text-center text-[2.25rem] sm:text-7xl mb-6 pb-2 bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent '>
-                    I'm a {text}<span className = "text-3xl sm:text-7xl bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent  blink">|</span>
+            <div className= "sm:h-20 ">
+                <h1 className='  font-bold  text-center text-[2rem] md:text-7xl mb-6 pb-2 bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent '>
+                    I'm a {text}<span className = "text-3xl md:text-7xl bg-gradient-to-r from-teal-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent  blink">|</span>
                 </h1>
             </div>
             <p className=' text-lg text-gray-400 mb-8 max-w-lg text-center mx-auto'>

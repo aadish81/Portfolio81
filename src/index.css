@@ -67,3 +67,50 @@ html,body{
   animation:slider-down 1.5s ease-out ;
 }
 
+
+
+@property --angle{
+  syntax:"<angle>";
+  inherits:true;
+  initial-value:0deg;
+}
+.brand{
+  padding:10px;
+  background:#0a0a0a;  
+  border-radius:20px;
+  /* height:100%;
+  width:100%; */
+  position:relative;
+}
+.brand::before,
+.brand::after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  border-radius:inherit;
+  background-image:conic-gradient(from var(--angle),purple,blue,purple);
+  
+  padding:20px;
+  animation:animat 1s linear infinite;
+
+}
+.brand::before{
+  filter:blur(5px);
+  z-index:-3;
+  left:0;
+  top:0;
+  
+}
+.brand::after{
+
+  z-index:-1;
+  left:0;
+  top:0;
+}
+
+@keyframes animat {
+  to {
+    --angle: 360deg;
+  }
+}

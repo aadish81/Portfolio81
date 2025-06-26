@@ -9,10 +9,13 @@ interface Bar{
 const Navbar:React.FC<Bar> = ({setOpenMenu})=> {
   return (
     <nav className='  w-full shadow-lg border-b border-white/12 bg-[10,10,10,0.8] backdrop-blur-lg'>
-        <div className='flex justify-around items-center h-16'>
-            <div className='font-bold text-3xl bg-gradient-to-r from-green-400 via-cyan-400 to-red-500 bg-clip-text text-transparent'>Aadish<span className='text-blue-500 font-mono font-bold'>:Joshi</span></div>
+        <div className='flex justify-around items-center h-20'>
+            <div className=" brand ">
+                <div className=' font-bold text-2xl bg-gradient-to-r from-green-400 via-cyan-400 to-red-500 bg-clip-text text-transparent '>Aadish<span className='text-blue-500 font-mono font-bold'>:Joshi</span></div>
+            </div>
+
             <div className='sm:flex hidden'>
-                <a href="#Home" className='mx-7 text-gray-400  hover:text-white transition-colors duration-200 text-lg font-bold'>Home</a>
+                <a href="#Home" className=' mx-7 text-gray-400  hover:text-white transition-colors duration-200 text-lg font-bold'>Home</a>
                 <a href="#About"className='mx-7 text-gray-400  hover:text-white transition-colors duration-200 text-lg font-bold'>About</a>
                 <a href="#Skills"className='mx-7 text-gray-400  hover:text-white transition-colors duration-200 text-lg font-bold'>Skills</a>
                 <a href="#Contact" className='mx-7 text-gray-400  hover:text-white transition-colors duration-200 text-lg font-bold'>Contact</a>
