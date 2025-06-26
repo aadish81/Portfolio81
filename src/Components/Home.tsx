@@ -13,14 +13,14 @@ function Home() {
     useEffect(() => {
         const interval = setInterval(() => {
             if(j<aboutMe[i%3].length){
-                duration = 400
+                duration = 250
                 setText(aboutMe[i%3].substring(0,j))
                 j++
                 k = j
 
             }
             else{
-                duration = 200
+                duration = 100
                 setText(aboutMe[i%3].substring(0,k--))
                 if(k<0){
                     j = 1
