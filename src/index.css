@@ -44,3 +44,26 @@ html,body{
   opacity: 1;
   transform: translateY(0);
 }
+
+@keyframes slider-down{
+  0%{
+    transform:translateY(-100%);
+    opacity:0;
+  }
+  15%{
+    transform:translateY(-70%);
+    opacity:0.4;
+  }
+  50%{
+    transform:translateY(-40%);
+    opacity:0.7
+  }
+    50%{
+    transform:translateY(0%);
+    opacity:1;
+  }
+}
+.slider{
+  animation:slider-down 1.5s ease-out ;
+}
+
