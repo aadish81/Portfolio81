@@ -4,6 +4,7 @@ const Frontend = [
     "HTML",
     "Javascript",
     "React Js",
+    "Next  Js",
     "Redux Toolkit",
     "CSS",
     "Tailwind CSS"
